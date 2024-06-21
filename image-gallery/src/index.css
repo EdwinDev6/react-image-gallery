@@ -1,4 +1,22 @@
-body{
+body {
   background-color: #202020;
   color: aliceblue;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    width: 100%;
+  }
 }

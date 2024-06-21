@@ -1,5 +1,7 @@
-import ImageGallery from 'react-image-gallery'
-import 'react-image-gallery/styles/css/image-gallery.css'
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import './index.css'; // Asegúrate de importar tu archivo CSS
+
 function App() {
   const images = [
     {
@@ -17,9 +19,10 @@ function App() {
   ];
 
   return (
-    <div>
-      <div style={{ width: '50%', margin: 'auto' }}>
-        <ImageGallery items={images}
+    <div className='container'>
+      <div className='gallery-wrapper'>
+        <ImageGallery
+          items={images}
           autoPlay={true}
           slideInterval={2000}
           showBullets={true}
@@ -29,7 +32,7 @@ function App() {
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
